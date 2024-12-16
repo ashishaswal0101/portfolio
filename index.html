@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <span>Ashish Aswal</span>
+      </div>
+      <div class="links">
+        <div class="link"><a href="#home">Home</a></div>
+        <div class="link"><a href="#about">About</a></div>
+        <div class="link"><a href="#skills">Skills</a></div>
+        <div class="link"><a href="#contact">Contact</a></div>
+      </div>
+    </div>
+  </nav>
+  <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+  <div class="dropdown">
+    <a href="#home" onclick="cancel()">Home</a>
+    <a href="#about" onclick="cancel()">About</a>
+    <a href="#skills" onclick="cancel()">Skills</a>
+    <a href="#contact" onclick="cancel()">Contact</a>
+    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+  </div>
+
+  <div class="backdrop" onclick="cancel()"></div>
+  <div class="greetings-container" onclick="Remove()">
+    <div class="greetings-card">
+      <i class="fa-regular fa-circle-xmark" onclick="Remove()"></i>
+      <p><span>👋</span> Hi! Welcome to my portfolio!</p>
+    </div>
+  </div>
+  <section>
+    <div class="main-container" id="home">
+      <div class="hero_image">
+        <img src="./img/left-img.jpg" alt="" />
+      </div>
+
+      <div class="content">
+        <h1>Hey I'm <span>Ashish</span></h1>
+        <h2 class="typing-text">I'm a <span></span></h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Accusantium, atque!
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/ashish-aswal-5325b0291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/ashishaswal0101"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/ashishaswal0101?igsh=b2xvNWVlazB2eDNm"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="btn">
+          <a href="ashishaswal.pdf" download="ashish-aswal-cv.pdf">
+            <button>Download CV</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="skills-container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <i class="fa-brands fa-html5"></i>
+          <p>HTML</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-css3-alt"></i>
+          <p>CSS</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-js"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-java"></i>
+          <p>Java</p>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-aws"></i>
+          <p>AWS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p id="left-text">
+        Hi, I'm <strong>Ashish Aswal</strong>, a passionate web developer with
+        a strong interest in building dynamic and responsive websites. I have
+        a background in IT and experience working with technologies like HTML,
+        CSS, JavaScript, and AWS. I'm constantly learning and exploring new
+        technologies to improve my skills.
+      </p>
+      <p id="right-text">
+        I love problem-solving and am dedicated to building projects that
+        focus on simplicity and user experience. Currently, I am expanding my
+        knowledge in JavaScript and React.js to keep up with the latest trends
+        in the tech world.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects-container">
+      <div class="project-discription">
+        <h2>Projects</h2>
+        <p>
+          Welcome to my Projects section! Here, you’ll find a showcase of the
+          diverse and impactful projects I’ve worked on, reflecting my skills,
+          creativity, and passion for problem-solving. Each project highlights
+          my ability to apply technical expertise, innovative thinking, and
+          attention to detail. From interactive web applications to dynamic
+          backend systems and everything in between, these projects
+          demonstrate my journey of learning and growth in the tech world.
+          Feel free to explore and discover how I approach challenges and
+          deliver effective solutions!
+        </p>
+      </div>
+      <div class="project-count">
+        <div class="skill-item">
+          <i class="fa-brands fa-html5"></i>
+          <p>HTML</p>
+          <span class="html-pro counter">0</span>
+          <span .counter>+</span>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-css3-alt"></i>
+          <p>CSS</p>
+          <span class="css-pro counter">0</span>
+          <span .counter>+</span>
+        </div>
+        <div class="skill-item">
+          <i class="fa-brands fa-js"></i>
+          <p>JavaScript</p>
+          <span class="js-pro counter">0</span>
+          <span .counter>+</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Me</h2>
+        <p>Feel free to get in touch with me via the following platforms:</p>
+        <a href="mailto:ashish@example.com">
+          <i class="fa-solid fa-envelope"></i> ashish@example.com
+        </a>
+        <a href="https://www.linkedin.com/in/ashish-aswal-5325b0291">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/ashishaswal0101">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.instagram.com/ashishaswal0101">
+          <i class="fa-brands fa-instagram"></i> Instagram </a><br />
+
+        <img id="contact-img" src="img/contactus.jpg" alt="" width="60%" height="40%" style="
+              object-fit: cover;
+              object-position: center;
+              display: inline-block;
+              border-radius: 10px;
+            " />
+      </div>
+
+      <div class="contact-pg">
+        <h3>Send Me a Message</h3>
+        <form class="contact-form" action="#" method="POST">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <!-- <span class="error">name is invalid</span> 
+            <span class="ok">name is valid</span> -->
+          <input type="tel" id="phone" name="name" placeholder="Enter your mobile number" oninput="Validate(event)"
+            required />
+          <span class="error"></span>
+          <span class="ok"></span>
+          <input type="email" id="email" name="email" placeholder="Your Email" oninput="Validate(event)" required />
+          <span class="error-email"></span>
+          <span class="ok-email"></span>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function hamburg() {
+      const navbar = document.querySelector(".dropdown");
+      document.querySelector(".backdrop").classList.add("show");
+      navbar.style.transform = "translateY(0px)";
+    }
+    function cancel() {
+      const navbar = document.querySelector(".dropdown");
+      document.querySelector(".backdrop").classList.remove("show");
+      navbar.style.transform = "translateY(-400px)";
+    }
+
+    var greet = document.querySelector(".greetings-container");
+    let Greet = function greetings() {
+      greet.style.display = "flex";
+      document.body.classList.add("no-scroll");
+    };
+
+    setTimeout(Greet, 1500);
+
+    function Remove() {
+      greet.style.display = "none";
+      let overFlow = document.querySelector(".no-scroll");
+      overFlow.style.overflow = "auto";
+    }
+
+    let htmlCount = 0;
+    let cssCount = 0;
+    let jsCount = 0;
+    function HTML() {
+      let html = document.querySelector(".html-pro");
+      if (htmlCount < 5) {
+        html.innerHTML = ++htmlCount;
+      } else {
+        clearInterval(htmlInterval);
+      }
+    }
+    let htmlInterval = setInterval(HTML, 1000);
+
+    function CSS() {
+      let css = document.querySelector(".css-pro");
+      if (cssCount < 3) {
+        css.innerHTML = ++cssCount;
+      } else {
+        clearInterval(cssInterval);
+      }
+    }
+    let cssInterval = setInterval(CSS, 1000);
+
+    function JS() {
+      let js = document.querySelector(".js-pro");
+      if (jsCount < 2) {
+        js.innerHTML = ++jsCount;
+      } else {
+        clearInterval(jsInterval);
+      }
+    }
+    let jsInterval = setInterval(JS, 1000);
+
+    function Validate(e) {
+      e.preventDefault();
+      let input_name = document.querySelector("#name");
+      let input_phone = document.querySelector("#phone");
+      let error = document.querySelector(".error");
+      let ok = document.querySelector(".ok");
+
+      //Regex pattern for validation
+      // let pattern_name = /[A-Z a-z ]+$/gm;
+      let pattern_phone = /^[6-9][0-9]{9}$/gm;
+
+      //pattern testing for inputs
+      // let res_name = pattern_name.test(input_name.value)
+      let res_phone = pattern_phone.test(input_phone.value);
+
+      // if(res_name === false){
+      //     error.classList.add("error-show");
+      //     ok.classList.remove("ok-show");
+      //     input_name.classList.add("error-border")
+      //     input_username.classList.remove("ok-border")
+      // }
+      // else{
+      //    error.classList.remove("error-show");
+      //    ok.classList.add("ok-show");
+      //    input_name.classList.add("ok-border")
+      // }
+      if (res_phone === false) {
+        error.innerHTML = "invalid phone number";
+        error.classList.add("error-show");
+        ok.classList.remove("ok-show");
+        input_phone.classList.add("error-border");
+        input_phone.classList.remove("ok-border");
+      } else {
+        ok.innerHTML = "phone number is valid";
+        error.classList.remove("error-show");
+        ok.classList.add("ok-show");
+        input_phone.classList.add("ok-border");
+      }
+
+      Email_check()
+
+     
+    }
+
+
+    function Email_check() {
+      let error = document.querySelector(".error-email");
+      let ok = document.querySelector(".ok-email");
+      let input_email = document.querySelector("#email");
+      let pattern_email =
+        /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gm;
+
+      let res_email = pattern_email.test(input_email.value);
+      console.log(res_email);
+
+      if (res_email === false) {
+        error.textContent = "invalid email address";
+        ok.textContent = "";
+      } else {
+        ok.textContent = "valid email address";
+        error.textContent = "";
+      }
+    }
+
+  </script>
+</body>
+
+</html>
